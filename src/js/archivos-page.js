@@ -27,6 +27,7 @@ const eventos = () => {
     inputFile.addEventListener('change', (event) =>{
         
         const file = event.target.files[0];
+        
 
         subirImagen(file).then(url => imgFoto.src = url );
     });
